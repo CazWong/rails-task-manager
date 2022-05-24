@@ -1,4 +1,4 @@
-<h1>Let's add a new task:</h1>
+<h1>Update Task</h1>
 
 <%= form_for(@task) do |t| %>
   <%= t.label :title %>
@@ -9,5 +9,9 @@
   <%= t.text_field :details %>
   <br>
   <br>
-  <%= t.submit "Create task" %>
+  <%= t.label :completed %>
+  <%= t.text_field :completed %>
+  <br>
+  <br>
+  <%= t.submit "Update task" %>
 <% end %>
